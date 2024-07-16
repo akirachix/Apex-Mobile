@@ -19,7 +19,7 @@
         style="@style/AppLevelText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvBrailleTranslation" />
+        app:layout_constraintTop_toBottomOf="@+id/tvTextToSpeech" />
 
     <TextView
         android:id="@+id/two"
@@ -84,7 +84,7 @@
         app:layout_constraintTop_toBottomOf="@+id/five" />
 
     <TextView
-        android:id="@+id/tvBrailleTranslation"
+        android:id="@+id/tvTextToSpeech"
         android:layout_width="293dp"
         android:layout_height="48dp"
         android:layout_marginStart="80dp"

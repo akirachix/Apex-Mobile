@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ScreenReader">
+    tools:context=".TextToSpeech">
 
 
     <TextView
@@ -92,7 +92,7 @@
         android:layout_marginStart="80dp"
         android:layout_marginTop="64dp"
         android:layout_marginEnd="60dp"
-        android:text="Screen Reader"
+        android:text="Text-To-Speech"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/signUpPage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="8dp"
+            android:text="Sign Up"
+            style="@style/AppHeadingText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilfullNames"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signUpPage">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/AppBodyText"
+                android:hint="Full Names"
+                android:inputType="textCapWords" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tilfullNames"
+            app:layout_constraintEnd_toStartOf="@+id/tilfullNames"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tilfullNames"
+            app:srcCompat="@drawable/user" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilUsername"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/tilfullNames"
+            app:layout_constraintStart_toStartOf="@+id/tilfullNames"
+            app:layout_constraintTop_toBottomOf="@+id/tilfullNames">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etUsername1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/AppBodyText"
+                android:hint="username" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/user3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/tilUsername"
+            app:layout_constraintEnd_toEndOf="@+id/imageView5"
+            app:layout_constraintStart_toStartOf="@+id/imageView5"
+            app:layout_constraintTop_toTopOf="@+id/tilUsername"
+            app:srcCompat="@drawable/user" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilSchool"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/tilUsername"
+            app:layout_constraintStart_toStartOf="@+id/tilUsername"
+            app:layout_constraintTop_toBottomOf="@+id/tilUsername">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etSchool"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="School Code"
+                style="@style/AppBodyText"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/tilSchool"
+            app:layout_constraintEnd_toEndOf="@+id/user3"
+            app:layout_constraintStart_toStartOf="@+id/user3"
+            app:layout_constraintTop_toTopOf="@+id/tilSchool"
+            app:srcCompat="@drawable/password" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilCreatePassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/tilSchool"
+            app:layout_constraintStart_toStartOf="@+id/tilSchool"
+            app:layout_constraintTop_toBottomOf="@+id/tilSchool"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etCreatePassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Create Password"
+                style="@style/AppBodyText"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/schoolCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/tilCreatePassword"
+            app:layout_constraintEnd_toEndOf="@+id/imageView7"
+            app:layout_constraintStart_toStartOf="@+id/imageView7"
+            app:layout_constraintTop_toTopOf="@+id/tilCreatePassword"
+            app:srcCompat="@drawable/password" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilConfirmPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/tilCreatePassword"
+            app:layout_constraintStart_toStartOf="@+id/tilCreatePassword"
+            app:layout_constraintTop_toBottomOf="@+id/tilCreatePassword"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirm Password"
+                style="@style/AppBodyText"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/confirmPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/tilConfirmPassword"
+            app:layout_constraintEnd_toEndOf="@+id/schoolCode"
+            app:layout_constraintStart_toStartOf="@+id/schoolCode"
+            app:layout_constraintTop_toTopOf="@+id/tilConfirmPassword"
+            app:srcCompat="@drawable/password" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilEmal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/tilConfirmPassword"
+            app:layout_constraintStart_toStartOf="@+id/tilConfirmPassword"
+            app:layout_constraintTop_toBottomOf="@+id/tilConfirmPassword">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/AppBodyText"
+                android:hint="Email" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/tilEmal"
+            app:layout_constraintEnd_toEndOf="@+id/confirmPassword"
+            app:layout_constraintStart_toStartOf="@+id/confirmPassword"
+            app:layout_constraintTop_toTopOf="@+id/tilEmal"
+            app:srcCompat="@drawable/email" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/tilEmal"
+            app:layout_constraintTop_toBottomOf="@+id/tilEmal"
+            app:srcCompat="@drawable/checkbox" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="I agree with"
+            style="@style/AppBodyText"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+        <TextView
+            android:id="@+id/privacy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="Privacy"
+            style="@style/AppSpecialText"
+            app:layout_constraintBottom_toBottomOf="@+id/textView2"
+            app:layout_constraintStart_toEndOf="@+id/textView2"
+            app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="And"
+            style="@style/AppBodyText"
+            app:layout_constraintBottom_toBottomOf="@+id/privacy"
+            app:layout_constraintStart_toEndOf="@+id/privacy"
+            app:layout_constraintTop_toTopOf="@+id/privacy" />
+
+        <TextView
+            android:id="@+id/policy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="Policy"
+            style="@style/AppSpecialText"
+            app:layout_constraintBottom_toBottomOf="@+id/textView6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView6"
+            app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+        <Button
+            android:id="@+id/buttonSignUp"
+            style="@style/AppButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="96dp"
+            android:text="Sign Up"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/policy"
+            app:layout_constraintStart_toStartOf="@+id/imageView4"
+            app:layout_constraintTop_toBottomOf="@+id/privacy" />
+
+        <TextView
+            android:id="@+id/textView8"
+            style="@style/AppBodyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="64dp"
+            android:text="Already Have An Account?"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/buttonSignUp"
+            app:layout_constraintTop_toBottomOf="@+id/buttonSignUp" />
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="24dp"
+            android:text="Sign In"
+            style="@style/AppSpecialText"
+            app:layout_constraintBottom_toBottomOf="@+id/textView8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView8"
+            app:layout_constraintTop_toTopOf="@+id/textView8" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

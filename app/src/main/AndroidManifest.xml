@@ -15,6 +15,9 @@
         android:theme="@style/Theme.Apex_Mobile"
         tools:targetApi="31">
         <activity
+            android:name=".ScreenReader"
+            android:exported="false" />
+        <activity
             android:name=".BrailleResource"
             android:exported="false" />
         <activity

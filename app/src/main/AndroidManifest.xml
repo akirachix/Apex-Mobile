@@ -15,6 +15,21 @@
         android:theme="@style/Theme.Apex_Mobile"
         tools:targetApi="31">
         <activity
+            android:name=".LevelApex"
+            android:exported="false" />
+        <activity
+            android:name=".ScreenReaderApex"
+            android:exported="false" />
+        <activity
+            android:name=".Levels2"
+            android:exported="false" />
+        <activity
+            android:name=".screenReader2"
+            android:exported="false" />
+        <activity
+            android:name=".ScreenReader"
+            android:exported="false" />
+        <activity
             android:name=".Levels"
             android:exported="false" />
         <activity
@@ -25,9 +40,6 @@
             android:exported="false" />
         <activity
             android:name=".TextToSpeech"
-            android:exported="false" />
-        <activity
-            android:name=".ScreenReader"
             android:exported="false" />
         <activity
             android:name=".BrailleResource"

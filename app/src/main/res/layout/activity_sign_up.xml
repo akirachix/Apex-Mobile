@@ -18,7 +18,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="64dp"
             android:layout_marginEnd="8dp"
-            android:text="Sign Up"
+            android:text="@string/sign_up"
             style="@style/AppHeadingText"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -40,7 +40,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 style="@style/AppBodyText"
-                android:hint="Full Names"
+                android:hint="@string/full_names"
                 android:inputType="textCapWords" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -70,7 +70,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 style="@style/AppBodyText"
-                android:hint="username" />
+                android:hint="@string/user_name" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <ImageView
@@ -96,7 +96,7 @@
                 android:id="@+id/etSchool"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="School Code"
+                android:hint="@string/school_code"
                 style="@style/AppBodyText"
                 android:inputType="number" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -125,7 +125,7 @@
                 android:id="@+id/etCreatePassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Create Password"
+                android:hint="@string/create_password"
                 style="@style/AppBodyText"
                 android:inputType="textPassword" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -154,7 +154,7 @@
                 android:id="@+id/etConfirmPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Confirm Password"
+                android:hint="@string/confirm_password"
                 style="@style/AppBodyText"
                 android:inputType="textPassword" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -183,7 +183,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 style="@style/AppBodyText"
-                android:hint="Email" />
+                android:hint="@string/email" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <ImageView
@@ -210,7 +210,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:text="I agree with"
+            android:text="@string/i_agree_with"
             style="@style/AppBodyText"
             app:layout_constraintBottom_toBottomOf="@+id/imageView4"
             app:layout_constraintStart_toEndOf="@+id/imageView4"
@@ -221,18 +221,18 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="4dp"
-            android:text="Privacy"
+            android:text="@string/privacy"
             style="@style/AppSpecialText"
             app:layout_constraintBottom_toBottomOf="@+id/textView2"
             app:layout_constraintStart_toEndOf="@+id/textView2"
             app:layout_constraintTop_toTopOf="@+id/textView2" />
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/tvExtra"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:text="And"
+            android:text="@string/and"
             style="@style/AppBodyText"
             app:layout_constraintBottom_toBottomOf="@+id/privacy"
             app:layout_constraintStart_toEndOf="@+id/privacy"
@@ -243,12 +243,12 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="4dp"
-            android:text="Policy"
+            android:text="@string/policy"
             style="@style/AppSpecialText"
-            app:layout_constraintBottom_toBottomOf="@+id/textView6"
+            app:layout_constraintBottom_toBottomOf="@+id/tvExtra"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/textView6"
-            app:layout_constraintTop_toTopOf="@+id/textView6" />
+            app:layout_constraintStart_toEndOf="@+id/tvExtra"
+            app:layout_constraintTop_toTopOf="@+id/tvExtra" />
 
         <Button
             android:id="@+id/buttonSignUp"
@@ -257,20 +257,20 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="96dp"
-            android:text="Sign Up"
+            tools:text="Sign Up"
             android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="@+id/policy"
             app:layout_constraintStart_toStartOf="@+id/imageView4"
             app:layout_constraintTop_toBottomOf="@+id/privacy" />
 
         <TextView
-            android:id="@+id/textView8"
+            android:id="@+id/tvAlready"
             style="@style/AppBodyText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="64dp"
-            android:text="Already Have An Account?"
+            android:text="@string/already_have_an_account"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="@+id/buttonSignUp"
             app:layout_constraintTop_toBottomOf="@+id/buttonSignUp" />
@@ -281,12 +281,12 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="24dp"
-            android:text="Sign In"
+            android:text="@string/sign_in"
             style="@style/AppSpecialText"
-            app:layout_constraintBottom_toBottomOf="@+id/textView8"
+            app:layout_constraintBottom_toBottomOf="@+id/tvAlready"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/textView8"
-            app:layout_constraintTop_toTopOf="@+id/textView8" />
+            app:layout_constraintStart_toEndOf="@+id/tvAlready"
+            app:layout_constraintTop_toTopOf="@+id/tvAlready" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

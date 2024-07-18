@@ -9,7 +9,7 @@
 
 
     <ImageView
-        android:id="@+id/ivMenu"
+        android:id="@+id/imageLayout"
         android:layout_width="52dp"
         android:layout_height="41dp"
         android:layout_marginStart="8dp"
@@ -20,35 +20,35 @@
 
     <TextView
         android:id="@+id/tvLevelRange"
+        style="@style/AppHeadingText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
-        android:text="Level 1"
-        style="@style/AppHeadingText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/level_1" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="72dp"
-        android:text="Braille Translator"
+        android:text="@string/braille_translator"
         android:textColor="@color/black"
         android:textSize="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivMenu" />
+        app:layout_constraintTop_toBottomOf="@+id/imageLayout" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btnNextLevel"
+        style="@style/AppButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        style="@style/AppButton"
-        android:textColor="#ffffff"
-        android:text="Finish"
+        android:text="@string/finish"
+        android:textColor="@color/white"
         android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.468"
@@ -61,7 +61,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="-178dp"
-        android:text="Congratulations!!!"
+        android:text="@string/congratulations"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView2" />
@@ -71,11 +71,21 @@
         android:layout_width="317dp"
         android:layout_height="326dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="208dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvCongratulations"
         app:srcCompat="@drawable/congratulations" />
+
+    <ImageView
+        android:id="@+id/lastBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/multiplication" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

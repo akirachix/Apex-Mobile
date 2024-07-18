@@ -7,109 +7,106 @@
     android:layout_height="match_parent"
     tools:context=".Articles">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/tvArticle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:text="Articles"
-        style="@style/AppHeadingText"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/tvArticle"
+            style="@style/AppHeadingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:text="@string/articles"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-            <ImageView
-                android:id="@+id/imageView6"
-                android:layout_width="102dp"
-                android:layout_height="136dp"
-                android:layout_marginStart="40dp"
-                android:layout_marginTop="32dp"
-                android:layout_marginEnd="294dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tvArticle"
-                app:srcCompat="@drawable/braille_article" />
+        <ImageView
+            android:id="@+id/backProfile"
+            android:layout_width="102dp"
+            android:layout_height="136dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="294dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvArticle"
+            app:srcCompat="@drawable/braille_article" />
 
-            <ImageView
-                android:id="@+id/imageView10"
-                android:layout_width="104dp"
-                android:layout_height="165dp"
-                android:layout_marginStart="32dp"
-                android:layout_marginTop="216dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tvArticle"
-                app:srcCompat="@drawable/screen_article" />
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="104dp"
+            android:layout_height="165dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="216dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvArticle"
+            app:srcCompat="@drawable/screen_article" />
 
-            <ImageView
-                android:id="@+id/imageView11"
-                android:layout_width="124dp"
-                android:layout_height="197dp"
-                android:layout_marginTop="32dp"
-                android:layout_marginBottom="36dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/imageView10"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/imageView10"
-                app:layout_constraintTop_toBottomOf="@+id/imageView10"
-                app:layout_constraintVertical_bias="1.0"
-                app:srcCompat="@drawable/text_to_speech_article" />
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="124dp"
+            android:layout_height="197dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="36dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imageView10"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/imageView10"
+            app:layout_constraintTop_toBottomOf="@+id/imageView10"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/text_to_speech_article" />
 
-            <ImageView
-        android:id="@+id/imageView12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/multiplication" />
+        <ImageView
+            android:id="@+id/backArticle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/multiplication" />
 
-            <TextView
-                android:id="@+id/textView24"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
-                android:text="Braille Article"
-                style="@style/AppBodyText"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="@+id/imageView6"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/imageView6"
-                app:layout_constraintTop_toTopOf="@+id/imageView6" />
+        <TextView
+            android:id="@+id/tvBrailleArticle"
+            style="@style/AppBodyText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/braille_article"
+            app:layout_constraintBottom_toBottomOf="@+id/backProfile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/backProfile"
+            app:layout_constraintTop_toTopOf="@+id/backProfile" />
 
-            <TextView
-                android:id="@+id/textView25"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
-                android:text="Screen Reader"
-                style="@style/AppBodyText"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="@+id/imageView10"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/imageView10"
-                app:layout_constraintTop_toTopOf="@+id/imageView10" />
+        <TextView
+            android:id="@+id/textView25"
+            style="@style/AppBodyText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/screen_reader"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView10"
+            app:layout_constraintTop_toTopOf="@+id/imageView10" />
 
-            <TextView
-                android:id="@+id/textView26"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
-                android:text="Text-To-Speech"
-                style="@style/AppBodyText"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="@+id/imageView11"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/imageView11"
-                app:layout_constraintTop_toTopOf="@+id/imageView11" />
+        <TextView
+            android:id="@+id/textView26"
+            style="@style/AppBodyText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/text_to_speech"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView11"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView11"
+            app:layout_constraintTop_toTopOf="@+id/imageView11" />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
 

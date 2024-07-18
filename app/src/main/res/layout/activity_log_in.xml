@@ -13,13 +13,13 @@
 
         <TextView
             android:id="@+id/logIn"
+            style="@style/AppHeadingText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="104dp"
             android:layout_marginEnd="8dp"
-            android:text="Log In"
-            style="@style/AppHeadingText"
+            android:text="@string/log_in"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -37,10 +37,10 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etUserName2"
+                style="@style/AppBodyText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                style="@style/AppBodyText"
-                android:hint="Username" />
+                android:hint="@string/username" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <ImageView
@@ -69,10 +69,10 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etPassword"
+                style="@style/AppBodyText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                style="@style/AppBodyText"
-                android:hint="Password"
+                android:hint="@string/password"
                 android:inputType="textPassword" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -100,22 +100,22 @@
 
         <TextView
             android:id="@+id/remember"
+            style="@style/AppBodyText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="25dp"
-            style="@style/AppBodyText"
-            android:text="Remember Me"
+            android:text="@string/remember_me"
             app:layout_constraintBottom_toBottomOf="@+id/checkbox"
             app:layout_constraintStart_toEndOf="@+id/checkbox"
             app:layout_constraintTop_toTopOf="@+id/checkbox" />
 
         <TextView
             android:id="@+id/forgot"
+            style="@style/AppBodyText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/AppBodyText"
-            android:text="Forgot Password"
-            android:textColor="#D9EB5454"
+            android:text="@string/forgot_password"
+            android:textColor="@color/red"
             app:layout_constraintBottom_toBottomOf="@+id/remember"
             app:layout_constraintEnd_toEndOf="@+id/tilPasswaord"
             app:layout_constraintStart_toEndOf="@+id/remember"
@@ -123,17 +123,17 @@
 
         <TextView
             android:id="@+id/textView4"
+            style="@style/AppBodyText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="104dp"
-            android:text="Sign Up With"
-            style="@style/AppBodyText"
+            android:text="@string/sign_up_with"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/remember" />
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/scenariomenu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -160,18 +160,18 @@
             android:layout_marginStart="32dp"
             android:layout_marginTop="56dp"
             android:layout_marginBottom="64dp"
-            android:text="Didn't have an account?"
+            android:text="@string/didn_t_have_an_account"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="@+id/checkbox"
-            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+            app:layout_constraintTop_toBottomOf="@+id/scenariomenu" />
 
         <TextView
             android:id="@+id/signIn"
+            style="@style/AppBodyText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            style="@style/AppBodyText"
-            android:text="Sign Up"
+            android:text="@string/sign_up"
             android:textColor="#D9EB5454"
             app:layout_constraintBottom_toBottomOf="@+id/textView"
             app:layout_constraintStart_toEndOf="@+id/textView"
@@ -179,8 +179,8 @@
 
         <Button
             android:id="@+id/buttonLogIn"
-            android:layout_width="0dp"
             style="@style/AppButton"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
             android:text="@string/log_in"

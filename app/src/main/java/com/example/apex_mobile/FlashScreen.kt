@@ -1,5 +1,6 @@
 package com.example.apex_mobile
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -14,5 +15,9 @@ class FlashScreen : AppCompatActivity() {
         binding = ActivityFlashScreenBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.loading.setOnClickListener {
+            val intent = Intent(this, LogIn::class.java)
+            startActivity(intent)
+        }
     }
 }

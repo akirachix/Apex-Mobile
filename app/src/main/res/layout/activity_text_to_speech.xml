@@ -10,79 +10,79 @@
 
     <TextView
         android:id="@+id/one"
+        style="@style/AppLevelText"
         android:layout_width="352dp"
         android:layout_height="51dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
-        android:background="#6A6565"
-        android:text="Level 1"
-        style="@style/AppLevelText"
+        android:background="@color/gray"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvTextToSpeech" />
+        app:layout_constraintTop_toBottomOf="@+id/tvTextToSpeech"
+        android:text="@string/level_1" />
 
     <TextView
         android:id="@+id/two"
+        style="@style/AppLevelText"
         android:layout_width="352dp"
         android:layout_height="51dp"
         android:layout_marginTop="24dp"
-        android:background="#6A6565"
-        android:text=" Level 2"
-        style="@style/AppLevelText"
+        android:background="@color/gray"
         app:layout_constraintEnd_toEndOf="@+id/one"
         app:layout_constraintStart_toStartOf="@+id/one"
-        app:layout_constraintTop_toBottomOf="@+id/one" />
+        app:layout_constraintTop_toBottomOf="@+id/one"
+        android:text="@string/level_2" />
 
     <TextView
         android:id="@+id/three"
+        style="@style/AppLevelText"
         android:layout_width="352dp"
         android:layout_height="51dp"
         android:layout_marginTop="24dp"
-        android:background="#6A6565"
-        android:text="Level 3"
-        style="@style/AppLevelText"
+        android:background="@color/gray"
         app:layout_constraintEnd_toEndOf="@+id/one"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/one"
-        app:layout_constraintTop_toBottomOf="@+id/two" />
+        app:layout_constraintTop_toBottomOf="@+id/two"
+        android:text="@string/level_3" />
 
     <TextView
         android:id="@+id/four"
+        style="@style/AppLevelText"
         android:layout_width="352dp"
         android:layout_height="51dp"
         android:layout_marginTop="24dp"
-        android:background="#6A6565"
-        android:text="Level 4"
-        style="@style/AppLevelText"
+        android:background="@color/gray"
         app:layout_constraintEnd_toEndOf="@+id/one"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/one"
-        app:layout_constraintTop_toBottomOf="@+id/three" />
+        app:layout_constraintTop_toBottomOf="@+id/three"
+        android:text="@string/level_4" />
 
     <TextView
         android:id="@+id/five"
+        style="@style/AppLevelText"
         android:layout_width="352dp"
         android:layout_height="51dp"
         android:layout_marginTop="24dp"
-        android:background="#6A6565"
-        android:text="Level 5"
-        style="@style/AppLevelText"
+        android:background="@color/gray"
         app:layout_constraintEnd_toEndOf="@+id/one"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/one"
-        app:layout_constraintTop_toBottomOf="@+id/four" />
+        app:layout_constraintTop_toBottomOf="@+id/four"
+        android:text="@string/level_5" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/textBackSpeech"
+        style="@style/AppButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Back"
-        android:textColor="#ffffff"
-        style="@style/AppButton"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/five"
-        app:layout_constraintTop_toBottomOf="@+id/five" />
+        app:layout_constraintTop_toBottomOf="@+id/five"
+        android:text="@string/back" />
 
     <TextView
         android:id="@+id/tvTextToSpeech"
@@ -92,14 +92,14 @@
         android:layout_marginStart="80dp"
         android:layout_marginTop="64dp"
         android:layout_marginEnd="60dp"
-        android:text="Text-To-Speech"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/text_to_speech" />
 
     <ImageView
-        android:id="@+id/ivMenu"
+        android:id="@+id/imageLayout"
         android:layout_width="56dp"
         android:layout_height="46dp"
         android:layout_marginStart="5dp"

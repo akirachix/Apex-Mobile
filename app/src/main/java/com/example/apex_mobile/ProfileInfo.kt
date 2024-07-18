@@ -1,5 +1,6 @@
 package com.example.apex_mobile
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -13,5 +14,10 @@ class ProfileInfo : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityProfileInfoBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.backProfile.setOnClickListener {
+            val intent = Intent(this, Home::class.java)
+            startActivity(intent)
+        }
     }
 }

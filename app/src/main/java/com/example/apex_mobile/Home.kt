@@ -1,5 +1,6 @@
 package com.example.apex_mobile
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -13,6 +14,16 @@ class Home : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.tvBraille.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
+        binding.tvMenu1.setOnClickListener {
+            val intent = Intent(this, MenuLayout::class.java)
+            startActivity(intent)
+        }
+
 
     }
 }

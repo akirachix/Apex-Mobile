@@ -8,7 +8,7 @@
     tools:context=".LevelApex">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/scenariomenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
@@ -20,14 +20,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="96dp"
-        android:text="Level 1"
+        android:text="@string/level_1"
         android:textColor="@color/black"
         android:textSize="30dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.74"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintStart_toEndOf="@+id/scenariomenu"
+        app:layout_constraintTop_toBottomOf="@+id/scenariomenu" />
 
     <TextView
         android:id="@+id/textView2"
@@ -36,21 +36,24 @@
         android:layout_marginStart="140dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="104dp"
-        android:text="Braille Translator"
+        tools:text="Braille Translator"
         android:textColor="@color/black"
-        android:textSize="24dp"
+        style="@style/AppBodyText"
+        android:textStyle="bold"
+        android:textSize="28dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textViewBraille"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:textSize="24dp"
+        style="@style/AppBodyText"
         android:textColor="@color/black"
-        android:text="Scenario"
+        android:text="@string/scenario"
+        android:textSize="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
@@ -62,24 +65,22 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="16dp"
-        android:background="#6A6565"
+        android:background="@color/gray"
         android:gravity="center"
-        android:text="@string/imagine_you_want_to_provide_your_students_with_their_end_of_year_assessment_how_would_you_provide_the_assessment_in_braille"
-        android:textAlignment="center"
-        android:textColor="#ffffff"
         android:textSize="24dp"
+        android:text="@string/imagine_you_want_to_provide_your_students_with_their_end_of_year_assessment_how_would_you_provide_the_assessment_in_braille"
+        style="@style/AppLevelText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.262"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewBraille" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/textBackSpeech"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Play"
-        android:textSize="24dp"
+        android:text="@string/play"
         style="@style/AppButton"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/textView4"
@@ -87,18 +88,17 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/translorback"
         style="@style/AppButton"
         android:layout_width="126dp"
         android:layout_height="62dp"
         android:layout_marginStart="64dp"
         android:layout_marginTop="64dp"
-        android:text="Back"
-        android:textSize="24dp"
+        android:text="@string/back"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/textView4"
-        app:layout_constraintStart_toStartOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintStart_toStartOf="@+id/textBackSpeech"
+        app:layout_constraintTop_toBottomOf="@+id/textBackSpeech" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
